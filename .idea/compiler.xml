@@ -7,13 +7,17 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="fastdfs_client" />
+        <module name="itcast.fastdfs_client" />
         <module name="itcast.itcast-fastdfs" />
         <module name="itcast.itcast-spring-security" />
         <module name="itcast:pinyougou-manage-web" />
         <module name="pinyougou-common" />
+        <module name="pinyougou-content-interface" />
+        <module name="pinyougou-content-service" />
         <module name="pinyougou-dao" />
         <module name="pinyougou-manage-web" />
         <module name="pinyougou-pojo" />
+        <module name="pinyougou-portal-web" />
         <module name="pinyougou-sellergoods-interface" />
         <module name="pinyougou-sellergoods-service" />
         <module name="pinyougou-shop-web" />
@@ -21,15 +25,20 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="fastdfs_client" target="1.5" />
+      <module name="itcast.fastdfs_client" target="1.5" />
       <module name="itcast.itcast-angularjs" target="1.5" />
       <module name="itcast.itcast-fastdfs" target="1.5" />
       <module name="itcast.itcast-spring-security" target="1.8" />
       <module name="itcast:pinyougou-manage-web" target="1.8" />
       <module name="pinyougou" target="1.8" />
       <module name="pinyougou-common" target="1.8" />
+      <module name="pinyougou-content" target="1.8" />
+      <module name="pinyougou-content-interface" target="1.8" />
+      <module name="pinyougou-content-service" target="1.8" />
       <module name="pinyougou-dao" target="1.8" />
       <module name="pinyougou-manage-web" target="1.8" />
       <module name="pinyougou-pojo" target="1.8" />
+      <module name="pinyougou-portal-web" target="1.8" />
       <module name="pinyougou-sellergoods" target="1.8" />
       <module name="pinyougou-sellergoods-interface" target="1.8" />
       <module name="pinyougou-sellergoods-service" target="1.8" />

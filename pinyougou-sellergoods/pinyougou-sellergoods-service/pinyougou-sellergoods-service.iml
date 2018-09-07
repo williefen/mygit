@@ -81,6 +81,6 @@
     <orderEntry type="library" name="Maven: com.github.sgroschupf:zkclient:0.1" level="project" />
     <orderEntry type="library" name="Maven: com.alibaba:fastjson:1.2.44" level="project" />
     <orderEntry type="module" module-name="pinyougou-common" />
-    <orderEntry type="module" module-name="fastdfs_client" />
+    <orderEntry type="module" module-name="itcast.fastdfs_client" />
   </component>
 </module>

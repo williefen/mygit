@@ -3,7 +3,9 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/../itcast-angularjs" />
     <file type="web" url="file://$PROJECT_DIR$/../itcast-spring-security" />
+    <file type="web" url="file://$PROJECT_DIR$/pinyougou-content/pinyougou-content-service" />
     <file type="web" url="file://$PROJECT_DIR$/pinyougou-manage-web" />
+    <file type="web" url="file://$PROJECT_DIR$/pinyougou-portal-web" />
     <file type="web" url="file://$PROJECT_DIR$/pinyougou-sellergoods/pinyougou-sellergoods-service" />
     <file type="web" url="file://$PROJECT_DIR$/pinyougou-shop-web" />
   </component>
@@ -22,6 +24,7 @@
         <option value="$PROJECT_DIR$/pinyougou-sellergoods/pinyougou-sellergoods-service/pom.xml" />
         <option value="$PROJECT_DIR$/fastdfs_client/pom.xml" />
         <option value="$PROJECT_DIR$/../itcast-fastdfs/pom.xml" />
+        <option value="$PROJECT_DIR$/../fastdfs_client/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

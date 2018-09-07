@@ -5,11 +5,10 @@
     <artifactId>pinyougou</artifactId>  
     <groupId>com.pinyougou</groupId>  
     <version>1.0-SNAPSHOT</version> 
-  </parent>
-
-  <modelVersion>4.0.0</modelVersion>  
-  <groupId>com.pinyougou</groupId>  
-  <artifactId>pinyougou-manage-web</artifactId>
+  </parent>  
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.pinyougou</groupId>
+  <artifactId>pinyougou-portal-web</artifactId>
   <packaging>war</packaging>
 
   <dependencies>
@@ -74,6 +73,7 @@
       <artifactId>pinyougou-common</artifactId>
       <version>1.0-SNAPSHOT</version>
     </dependency>
+
   </dependencies>
 
   <build>
@@ -84,10 +84,9 @@
         <artifactId>tomcat7-maven-plugin</artifactId>
         <configuration>
           <path>/</path>
-          <port>9102</port>
+          <port>9100</port>
         </configuration>
       </plugin>
     </plugins>
   </build>
-
 </project>
