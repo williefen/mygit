@@ -12,6 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.StringUtils;
 import tk.mybatis.mapper.entity.Example;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service(interfaceClass = ContentService.class)
@@ -34,5 +35,20 @@ public class ContentServiceImpl extends BaseServiceImpl<TbContent> implements Co
         PageInfo<TbContent> pageInfo = new PageInfo<>(list);
 
         return new PageResult(pageInfo.getTotal(), pageInfo.getList());
+    }
+
+    @Override
+    public List<TbContent> findContentListByCategoryId(Long categoryId) {
+         List<TbContent> contentList=new ArrayList<>();
+         Example example = new Example(TbContent.class);
+         Example.Criteria criteria=example.createCriteria();
+         //有效排序
+         criteria.andEqualTo("status","1");
+         //内容分类
+         criteria.andEqualTo("categoryId",categoryId);
+         // 降序排列
+         example.orderBy("sortOrder").desc();
+         contentList = contentMapper.selectByExample(example);
+        return contentList ;
     }
 }

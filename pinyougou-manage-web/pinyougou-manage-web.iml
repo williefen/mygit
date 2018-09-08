@@ -78,6 +78,6 @@
     <orderEntry type="library" name="Maven: org.springframework.security:spring-security-core:4.2.3.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.security:spring-security-config:4.2.3.RELEASE" level="project" />
     <orderEntry type="module" module-name="pinyougou-common" />
-    <orderEntry type="module" module-name="fastdfs_client" />
+    <orderEntry type="module" module-name="itcast.fastdfs_client" />
   </component>
 </module>

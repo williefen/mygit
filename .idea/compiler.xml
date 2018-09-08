@@ -6,9 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="fastdfs_client" />
         <module name="itcast.fastdfs_client" />
         <module name="itcast.itcast-fastdfs" />
+        <module name="itcast.itcast-redis" />
         <module name="itcast.itcast-spring-security" />
         <module name="itcast:pinyougou-manage-web" />
         <module name="pinyougou-common" />
@@ -24,10 +24,10 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="fastdfs_client" target="1.5" />
       <module name="itcast.fastdfs_client" target="1.5" />
       <module name="itcast.itcast-angularjs" target="1.5" />
       <module name="itcast.itcast-fastdfs" target="1.5" />
+      <module name="itcast.itcast-redis" target="1.8" />
       <module name="itcast.itcast-spring-security" target="1.8" />
       <module name="itcast:pinyougou-manage-web" target="1.8" />
       <module name="pinyougou" target="1.8" />
