@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../fastdfs_client/fastdfs_client.iml" filepath="$PROJECT_DIR$/../fastdfs_client/fastdfs_client.iml" />
       <module fileurl="file://$PROJECT_DIR$/../itcast-angularjs/itcast.itcast-angularjs.iml" filepath="$PROJECT_DIR$/../itcast-angularjs/itcast.itcast-angularjs.iml" />
       <module fileurl="file://$PROJECT_DIR$/../itcast-fastdfs/itcast.itcast-fastdfs.iml" filepath="$PROJECT_DIR$/../itcast-fastdfs/itcast.itcast-fastdfs.iml" />
       <module fileurl="file://$PROJECT_DIR$/../itcast-redis/itcast.itcast-redis.iml" filepath="$PROJECT_DIR$/../itcast-redis/itcast.itcast-redis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../itcast-solr/itcast.itcast-solr.iml" filepath="$PROJECT_DIR$/../itcast-solr/itcast.itcast-solr.iml" />
       <module fileurl="file://$PROJECT_DIR$/../itcast-spring-security/itcast.itcast-spring-security.iml" filepath="$PROJECT_DIR$/../itcast-spring-security/itcast.itcast-spring-security.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../fastdfs_client/itcast.itcast_fastdfs_client.iml" filepath="$PROJECT_DIR$/../fastdfs_client/itcast.itcast_fastdfs_client.iml" />
       <module fileurl="file://$PROJECT_DIR$/pinyougou.iml" filepath="$PROJECT_DIR$/pinyougou.iml" />
       <module fileurl="file://$PROJECT_DIR$/pinyougou-common/pinyougou-common.iml" filepath="$PROJECT_DIR$/pinyougou-common/pinyougou-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/pinyougou-content/pinyougou-content.iml" filepath="$PROJECT_DIR$/pinyougou-content/pinyougou-content.iml" />
@@ -20,6 +21,7 @@
       <module fileurl="file://$PROJECT_DIR$/pinyougou-sellergoods/pinyougou-sellergoods-interface/pinyougou-sellergoods-interface.iml" filepath="$PROJECT_DIR$/pinyougou-sellergoods/pinyougou-sellergoods-interface/pinyougou-sellergoods-interface.iml" />
       <module fileurl="file://$PROJECT_DIR$/pinyougou-sellergoods/pinyougou-sellergoods-service/pinyougou-sellergoods-service.iml" filepath="$PROJECT_DIR$/pinyougou-sellergoods/pinyougou-sellergoods-service/pinyougou-sellergoods-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/pinyougou-shop-web/pinyougou-shop-web.iml" filepath="$PROJECT_DIR$/pinyougou-shop-web/pinyougou-shop-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pinyougou-solr-import/pinyougou-solr-import.iml" filepath="$PROJECT_DIR$/pinyougou-solr-import/pinyougou-solr-import.iml" />
     </modules>
   </component>
 </project>

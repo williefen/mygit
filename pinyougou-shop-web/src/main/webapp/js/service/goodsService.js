@@ -33,4 +33,8 @@ app.service("goodsService",function ($http) {
     this.updateStatus = function (selectedIds, status) {
         return $http.get("../goods/updateStatus.do?ids=" + selectedIds + "&status=" + status);
     };
+     //更新上架或下架状态
+    this.updownStatus = function (selectedIds, status) {
+        return $http.get("../goods/updownStatus.do?ids=" + selectedIds + "&status=" + status);
+    };
 });

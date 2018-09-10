@@ -104,6 +104,7 @@ public class GoodsController {
         }
         return Result.fail("更新状态失败");
         }
+
 }
 
 

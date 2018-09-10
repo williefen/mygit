@@ -67,7 +67,7 @@ public class GoodsServiceImpl extends BaseServiceImpl<TbGoods> implements GoodsS
         // 保存基本信息
         add(goods.getGoods());
 
-          //  int i=11/0;
+       //  int i=11/0;
           //保存描述信息
         goods.getGoodsDesc().setGoodsId(goods.getGoods().getId());
         goodsDescMapper.insertSelective(goods.getGoodsDesc());
@@ -98,12 +98,13 @@ public class GoodsServiceImpl extends BaseServiceImpl<TbGoods> implements GoodsS
     @Transactional
     @Override
     public void updateGoods(Goods goods) {
-              //
+        //更新商品信息
+        //修改过则重新设置未审核
         goods.getGoods().setAuditStatus("0");
         goodsMapper.updateByPrimaryKeySelective(goods.getGoods());
-            //
+        //更新商品描述信息
         goodsDescMapper.updateByPrimaryKeySelective(goods.getGoodsDesc());
-           //
+        //删除原有的SKU列表，防止数据冗沉
         TbItem param = new TbItem();
         param.setGoodsId(goods.getGoods().getId());
         itemMapper.delete(param);
@@ -144,8 +145,40 @@ public class GoodsServiceImpl extends BaseServiceImpl<TbGoods> implements GoodsS
           Example example = new Example(TbGoods.class);
           example.createCriteria().andIn("id",Arrays.asList(ids));
 
-          //
+        //批量更新商品的删除状态为删除
          goodsMapper.updateByExampleSelective(goods,example);
+    }
+
+    /**
+     * 上下架
+     * @param ids
+     * @param status
+     * @throws Exception
+     */
+    @Override
+    public void updownStatus(Long[] ids, String status) throws Exception {
+
+        TbGoods goods = new TbGoods();
+        for (Long id : ids) {
+            TbGoods oneGoods = findOne(id);
+            if ("1".equals(status)) {
+                if ("2".equals(oneGoods.getAuditStatus())) {
+                    goods.setIsMarketable("1");
+                } else {
+                    throw new Exception("有未通过审核商品，请确认");
+                }
+            } else {
+                if ("2".equals(oneGoods.getAuditStatus()) && "1".equals(oneGoods.getIsMarketable())) {
+                    goods.setIsMarketable("0");
+                } else {
+                    throw new Exception("有未上架商品，请确认");
+                }
+            }
+        }
+        Example example = new Example(TbGoods.class);
+        example.createCriteria().andIn("id", Arrays.asList(ids));
+        //批量更新商品的上下架状态
+        goodsMapper.updateByExampleSelective(goods, example);
     }
 
     /**

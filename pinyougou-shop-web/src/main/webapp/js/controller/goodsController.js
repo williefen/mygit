@@ -42,6 +42,7 @@ app.controller("goodsController", function ($scope, $controller, $location, good
         });
     };
 
+
     $scope.findOne = function () {
         //获取路径中的商品id
         var id = $location.search()["id"];
@@ -79,6 +80,23 @@ app.controller("goodsController", function ($scope, $controller, $location, good
         }
         if(confirm("确定要删除已选择的记录吗")){
             goodsService.delete($scope.selectedIds).success(function (response) {
+                if(response.success){
+                    $scope.reloadList();
+                    $scope.selectedIds = [];
+                } else {
+                    alert(response.message);
+                }
+            });
+        }
+    };
+    // 商品上架
+    $scope.upmarket = function () {
+        if($scope.selectedIds.length < 1){
+            alert("请先选择要上架的记录");
+            return;
+        }
+        if(confirm("确定要上架已选择的记录吗")){
+            goodsService.upmarket($scope.selectedIds).success(function (response) {
                 if(response.success){
                     $scope.reloadList();
                     $scope.selectedIds = [];
@@ -278,4 +296,23 @@ app.controller("goodsController", function ($scope, $controller, $location, good
         }
     };
 
+    // 修改商品上下架状态
+    $scope.updownStatus = function (status) {
+        if($scope.selectedIds.length < 1) {
+            alert("请先选择要上架或下架的商品");
+            return;
+        }
+        if(confirm("确定要更新选中商品的上架或下架状态吗？")){
+            goodsService.updownStatus($scope.selectedIds, status).success(function (response) {
+                if(response.success) {
+                    alert(response.message);
+                    //刷新并清空选中的商品
+                    $scope.reloadList();
+                    $scope.selectedIds = [];
+                } else {
+                    alert(response.message);
+                }
+            });
+        }
+    };
 });

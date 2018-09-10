@@ -24,8 +24,9 @@
         <option value="$PROJECT_DIR$/pinyougou-sellergoods/pinyougou-sellergoods-service/pom.xml" />
         <option value="$PROJECT_DIR$/fastdfs_client/pom.xml" />
         <option value="$PROJECT_DIR$/../itcast-fastdfs/pom.xml" />
-        <option value="$PROJECT_DIR$/../fastdfs_client/pom.xml" />
         <option value="$PROJECT_DIR$/../itcast-redis/pom.xml" />
+        <option value="$PROJECT_DIR$/../fastdfs_client/pom.xml" />
+        <option value="$PROJECT_DIR$/../itcast-solr/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
