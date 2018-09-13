@@ -45,11 +45,11 @@ public class GoodsServiceImpl extends BaseServiceImpl<TbGoods> implements GoodsS
         // 不查询删除商品
         criteria.andNotEqualTo("isDelete","1");
         // 商家限定
-        if(!StringUtils.isEmpty(goods.getSellerId())){
+   /*     if(!StringUtils.isEmpty(goods.getSellerId())){
             criteria.andEqualTo("sellerId",  goods.getSellerId());
-        }
+        }*/
         if(!StringUtils.isEmpty(goods.getAuditStatus())){
-            criteria.andEqualTo("auditStatus",  goods.getAuditStatus());
+            criteria.andEqualTo("auditStatus", goods.getAuditStatus());
         }
         if(!StringUtils.isEmpty(goods.getGoodsName())){
             criteria.andLike("goodsName", "%" + goods.getGoodsName() + "%");
@@ -67,7 +67,7 @@ public class GoodsServiceImpl extends BaseServiceImpl<TbGoods> implements GoodsS
         // 保存基本信息
         add(goods.getGoods());
 
-       //  int i=11/0;
+          // int i=1/0;
           //保存描述信息
         goods.getGoodsDesc().setGoodsId(goods.getGoods().getId());
         goodsDescMapper.insertSelective(goods.getGoodsDesc());
@@ -127,6 +127,7 @@ public class GoodsServiceImpl extends BaseServiceImpl<TbGoods> implements GoodsS
         if ("2".equals(status)){
             TbItem item = new TbItem();
             item.setStatus("1");
+
             Example itemExample = new Example(TbItem.class);
             Example.Criteria criteria1 = itemExample.createCriteria();
             // update tb_item set status='1' where goods_id in(1,3,34)
@@ -179,6 +180,19 @@ public class GoodsServiceImpl extends BaseServiceImpl<TbGoods> implements GoodsS
         example.createCriteria().andIn("id", Arrays.asList(ids));
         //批量更新商品的上下架状态
         goodsMapper.updateByExampleSelective(goods, example);
+    }
+
+    @Override
+    public List<TbItem> findItemListByGoodsIdsAndStatus(Long[] ids, String status) {
+        Example example = new Example(TbItem.class);
+
+        Example.Criteria criteria = example.createCriteria();
+
+        criteria.andEqualTo("status",status);
+
+        criteria.andIn("goodsId",Arrays.asList(ids));
+
+        return  itemMapper.selectByExample(example);
     }
 
     /**
@@ -239,7 +253,7 @@ public class GoodsServiceImpl extends BaseServiceImpl<TbGoods> implements GoodsS
             //将图片json格式字符串转换为一个Json对象
             List<Map> images = JSONArray.parseArray(goods.getGoodsDesc().getItemImages(), Map.class);
 
-            item.setImage(images.get(0).toString());
+            item.setImage(images.get(0).get("url").toString());
         }
 
         //设置商家数据

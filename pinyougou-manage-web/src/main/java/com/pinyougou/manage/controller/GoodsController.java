@@ -2,6 +2,8 @@ package com.pinyougou.manage.controller;
 
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.pinyougou.pojo.TbGoods;
+import com.pinyougou.pojo.TbItem;
+import com.pinyougou.search.service.ItemSearchService;
 import com.pinyougou.sellergoods.service.GoodsService;
 import com.pinyougou.vo.Goods;
 import com.pinyougou.vo.PageResult;
@@ -9,14 +11,17 @@ import com.pinyougou.vo.Result;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Arrays;
 import java.util.List;
 
 @RequestMapping("/goods")
 @RestController
 public class GoodsController {
 
-    @Reference
+    @Reference(timeout = 50000)
     private GoodsService goodsService;
+    @Reference(timeout = 50000)
+    private ItemSearchService itemSearchService;
 
     @RequestMapping("/findAll")
     public List<TbGoods> findAll() {
@@ -69,6 +74,7 @@ public class GoodsController {
     public Result delete(Long[] ids) {
         try {
             goodsService.deleteGoodsByIds(ids);
+            itemSearchService.deleteItemByGoodsIds(Arrays.asList(ids));
             return Result.ok("删除成功");
         } catch (Exception e) {
             e.printStackTrace();
@@ -92,12 +98,17 @@ public class GoodsController {
         return goodsService.search(page, rows, goods);
     }
 
-    @GetMapping("/updateStatus")
+       @GetMapping("/updateStatus")
         public Result updateStatus(Long[] ids, String status){
 
         try {
 
             goodsService.updateStatus(ids,status);
+            if ("2".equals(status)){
+                List<TbItem> itemList = goodsService.findItemListByGoodsIdsAndStatus(ids, "1");
+                itemSearchService.importItemList(itemList);
+            }
+
             return  Result.ok("更新状态成功");
         } catch (Exception e) {
             e.printStackTrace();
