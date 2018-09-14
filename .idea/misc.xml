@@ -4,6 +4,7 @@
     <file type="web" url="file://$PROJECT_DIR$/../itcast-angularjs" />
     <file type="web" url="file://$PROJECT_DIR$/../itcast-spring-security" />
     <file type="web" url="file://$PROJECT_DIR$/pinyougou-content/pinyougou-content-service" />
+    <file type="web" url="file://$PROJECT_DIR$/pinyougou-item-web" />
     <file type="web" url="file://$PROJECT_DIR$/pinyougou-manage-web" />
     <file type="web" url="file://$PROJECT_DIR$/pinyougou-portal-web" />
     <file type="web" url="file://$PROJECT_DIR$/pinyougou-search-web" />
@@ -29,6 +30,8 @@
         <option value="$PROJECT_DIR$/../itcast-redis/pom.xml" />
         <option value="$PROJECT_DIR$/../fastdfs_client/pom.xml" />
         <option value="$PROJECT_DIR$/../itcast-solr/pom.xml" />
+        <option value="$PROJECT_DIR$/../itcast-freemarker/pom.xml" />
+        <option value="$PROJECT_DIR$/../itcast-activemq/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

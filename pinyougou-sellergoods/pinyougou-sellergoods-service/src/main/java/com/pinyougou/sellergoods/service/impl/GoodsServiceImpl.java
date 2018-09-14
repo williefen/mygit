@@ -12,6 +12,7 @@ import com.pinyougou.sellergoods.service.GoodsService;
 import com.pinyougou.service.impl.BaseServiceImpl;
 import com.pinyougou.vo.Goods;
 import com.pinyougou.vo.PageResult;
+import org.apache.zookeeper.ZooDefs;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 import tk.mybatis.mapper.entity.Example;
@@ -45,7 +46,7 @@ public class GoodsServiceImpl extends BaseServiceImpl<TbGoods> implements GoodsS
         // 不查询删除商品
         criteria.andNotEqualTo("isDelete","1");
         // 商家限定
-   /*     if(!StringUtils.isEmpty(goods.getSellerId())){
+       /* if(!StringUtils.isEmpty(goods.getSellerId())){
             criteria.andEqualTo("sellerId",  goods.getSellerId());
         }*/
         if(!StringUtils.isEmpty(goods.getAuditStatus())){
@@ -195,6 +196,33 @@ public class GoodsServiceImpl extends BaseServiceImpl<TbGoods> implements GoodsS
         return  itemMapper.selectByExample(example);
     }
 
+    @Override
+    public Goods findGoodsByIdAndStatus(Long goodsId, String status) {
+        Goods goods = new Goods();
+        //1、根据商品id查询商品基本信息
+        TbGoods tbGoods = findOne(goodsId);
+        goods.setGoods(tbGoods);
+        // 2、根据商品id查询商品描述信息
+        TbGoodsDesc tbGoodsDesc = goodsDescMapper.selectByPrimaryKey(goodsId);
+        goods.setGoodsDesc(tbGoodsDesc);
+        // 3、根据商品id查询商品sku列表
+        TbItem param = new TbItem();
+        param.setGoodsId(goodsId);
+        Example example = new Example(TbItem.class);
+        Example.Criteria criteria = example.createCriteria();
+        criteria.andEqualTo("status",status);
+        criteria.andEqualTo("goodsId",goodsId);
+
+        example.orderBy("isDefault").desc();
+
+        // 根据条件查询；查询条件（也就是该方法对应处理的对象）
+        List<TbItem> itemList = itemMapper.selectByExample(example);
+
+        goods.setItemList(itemList);
+
+        return goods;
+    }
+
     /**
      * 保存sku动态数据
      * @param goods
@@ -226,6 +254,8 @@ public class GoodsServiceImpl extends BaseServiceImpl<TbGoods> implements GoodsS
                 item.setNum(9999);
                 item.setIsDefault("1");//表示默认
                 item.setStatus("0");//未审核
+                item.setSpec("{}");
+
                 item.setTitle(goods.getGoods().getGoodsName());
 
                 setItemValue(item, goods);

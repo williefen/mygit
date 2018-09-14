@@ -25,4 +25,6 @@ public interface GoodsService extends BaseService<TbGoods> {
     void updownStatus(Long[] ids, String status) throws Exception;
     // 根据商品SPU id集合和状态查询这些商品对应的sku列表
     List<TbItem> findItemListByGoodsIdsAndStatus(Long[] ids, String status);
+     // 根据商品id查询商品基本 描述信息 sku列表
+    Goods findGoodsByIdAndStatus(Long goodsId, String status);
 }

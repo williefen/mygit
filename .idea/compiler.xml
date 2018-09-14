@@ -7,7 +7,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="itcast.fastdfs_client" />
+        <module name="itcast.itcast-activemq" />
         <module name="itcast.itcast-fastdfs" />
+        <module name="itcast.itcast-freemarker" />
         <module name="itcast.itcast-redis" />
         <module name="itcast.itcast-solr" />
         <module name="itcast.itcast-spring-security" />
@@ -17,6 +19,7 @@
         <module name="pinyougou-content-interface" />
         <module name="pinyougou-content-service" />
         <module name="pinyougou-dao" />
+        <module name="pinyougou-item-web" />
         <module name="pinyougou-manage-web" />
         <module name="pinyougou-pojo" />
         <module name="pinyougou-portal-web" />
@@ -31,8 +34,10 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="itcast.fastdfs_client" target="1.5" />
+      <module name="itcast.itcast-activemq" target="1.8" />
       <module name="itcast.itcast-angularjs" target="1.5" />
       <module name="itcast.itcast-fastdfs" target="1.5" />
+      <module name="itcast.itcast-freemarker" target="1.8" />
       <module name="itcast.itcast-redis" target="1.8" />
       <module name="itcast.itcast-solr" target="1.8" />
       <module name="itcast.itcast-spring-security" target="1.8" />
@@ -44,6 +49,7 @@
       <module name="pinyougou-content-interface" target="1.8" />
       <module name="pinyougou-content-service" target="1.8" />
       <module name="pinyougou-dao" target="1.8" />
+      <module name="pinyougou-item-web" target="1.8" />
       <module name="pinyougou-manage-web" target="1.8" />
       <module name="pinyougou-pojo" target="1.8" />
       <module name="pinyougou-portal-web" target="1.8" />

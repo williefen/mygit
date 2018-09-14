@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../itcast-activemq/itcast.itcast-activemq.iml" filepath="$PROJECT_DIR$/../itcast-activemq/itcast.itcast-activemq.iml" />
       <module fileurl="file://$PROJECT_DIR$/../itcast-angularjs/itcast.itcast-angularjs.iml" filepath="$PROJECT_DIR$/../itcast-angularjs/itcast.itcast-angularjs.iml" />
       <module fileurl="file://$PROJECT_DIR$/../itcast-fastdfs/itcast.itcast-fastdfs.iml" filepath="$PROJECT_DIR$/../itcast-fastdfs/itcast.itcast-fastdfs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../itcast-freemarker/itcast.itcast-freemarker.iml" filepath="$PROJECT_DIR$/../itcast-freemarker/itcast.itcast-freemarker.iml" />
       <module fileurl="file://$PROJECT_DIR$/../itcast-redis/itcast.itcast-redis.iml" filepath="$PROJECT_DIR$/../itcast-redis/itcast.itcast-redis.iml" />
       <module fileurl="file://$PROJECT_DIR$/../itcast-solr/itcast.itcast-solr.iml" filepath="$PROJECT_DIR$/../itcast-solr/itcast.itcast-solr.iml" />
       <module fileurl="file://$PROJECT_DIR$/../itcast-spring-security/itcast.itcast-spring-security.iml" filepath="$PROJECT_DIR$/../itcast-spring-security/itcast.itcast-spring-security.iml" />
@@ -14,6 +16,7 @@
       <module fileurl="file://$PROJECT_DIR$/pinyougou-content/pinyougou-content-interface/pinyougou-content-interface.iml" filepath="$PROJECT_DIR$/pinyougou-content/pinyougou-content-interface/pinyougou-content-interface.iml" />
       <module fileurl="file://$PROJECT_DIR$/pinyougou-content/pinyougou-content-service/pinyougou-content-service.iml" filepath="$PROJECT_DIR$/pinyougou-content/pinyougou-content-service/pinyougou-content-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/pinyougou-dao/pinyougou-dao.iml" filepath="$PROJECT_DIR$/pinyougou-dao/pinyougou-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pinyougou-item-web/pinyougou-item-web.iml" filepath="$PROJECT_DIR$/pinyougou-item-web/pinyougou-item-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/pinyougou-manage-web/pinyougou-manage-web.iml" filepath="$PROJECT_DIR$/pinyougou-manage-web/pinyougou-manage-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/pinyougou-pojo/pinyougou-pojo.iml" filepath="$PROJECT_DIR$/pinyougou-pojo/pinyougou-pojo.iml" />
       <module fileurl="file://$PROJECT_DIR$/pinyougou-portal-web/pinyougou-portal-web.iml" filepath="$PROJECT_DIR$/pinyougou-portal-web/pinyougou-portal-web.iml" />
