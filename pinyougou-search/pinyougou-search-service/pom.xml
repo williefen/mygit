@@ -58,7 +58,16 @@
       <groupId>com.alibaba</groupId>
       <artifactId>fastjson</artifactId>
     </dependency>
-
+    <!-- ActiveMQ 依赖  -->
+    <dependency>
+      <groupId>org.apache.activemq</groupId>
+      <artifactId>activemq-client</artifactId>
+    </dependency>
+    <!--  加入 spring-jms 依赖  -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-jms</artifactId>
+    </dependency>
   </dependencies>
   <build>
     <plugins>

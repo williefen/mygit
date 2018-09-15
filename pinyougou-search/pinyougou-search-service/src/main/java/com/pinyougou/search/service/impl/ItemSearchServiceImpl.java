@@ -2,7 +2,6 @@ package com.pinyougou.search.service.impl;
 
 
 import com.alibaba.dubbo.config.annotation.Service;
-
 import com.alibaba.fastjson.JSON;
 import com.pinyougou.pojo.TbItem;
 import com.pinyougou.search.service.ItemSearchService;
@@ -29,7 +28,6 @@ import java.util.Set;
 
 @Service
 public class ItemSearchServiceImpl implements ItemSearchService {
-
 
      @Autowired
      private SolrTemplate solrTemplate;
