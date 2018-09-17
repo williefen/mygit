@@ -11,6 +11,8 @@
     <file type="web" url="file://$PROJECT_DIR$/pinyougou-search/pinyougou-search-service" />
     <file type="web" url="file://$PROJECT_DIR$/pinyougou-sellergoods/pinyougou-sellergoods-service" />
     <file type="web" url="file://$PROJECT_DIR$/pinyougou-shop-web" />
+    <file type="web" url="file://$PROJECT_DIR$/pinyougou-user-web" />
+    <file type="web" url="file://$PROJECT_DIR$/pinyougou-user/pinyougou-user-service" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -32,6 +34,9 @@
         <option value="$PROJECT_DIR$/../itcast-solr/pom.xml" />
         <option value="$PROJECT_DIR$/../itcast-freemarker/pom.xml" />
         <option value="$PROJECT_DIR$/../itcast-activemq/pom.xml" />
+        <option value="$PROJECT_DIR$/../alicom-dysms-api/pom.xml" />
+        <option value="$PROJECT_DIR$/../itcast-spring-boot/pom.xml" />
+        <option value="$PROJECT_DIR$/../itcast-sms/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

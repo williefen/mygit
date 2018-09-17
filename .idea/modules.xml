@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../alicom-dysms-api/itcast.alicom-dysms-api.iml" filepath="$PROJECT_DIR$/../alicom-dysms-api/itcast.alicom-dysms-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/../itcast-activemq/itcast.itcast-activemq.iml" filepath="$PROJECT_DIR$/../itcast-activemq/itcast.itcast-activemq.iml" />
       <module fileurl="file://$PROJECT_DIR$/../itcast-angularjs/itcast.itcast-angularjs.iml" filepath="$PROJECT_DIR$/../itcast-angularjs/itcast.itcast-angularjs.iml" />
       <module fileurl="file://$PROJECT_DIR$/../itcast-fastdfs/itcast.itcast-fastdfs.iml" filepath="$PROJECT_DIR$/../itcast-fastdfs/itcast.itcast-fastdfs.iml" />
       <module fileurl="file://$PROJECT_DIR$/../itcast-freemarker/itcast.itcast-freemarker.iml" filepath="$PROJECT_DIR$/../itcast-freemarker/itcast.itcast-freemarker.iml" />
       <module fileurl="file://$PROJECT_DIR$/../itcast-redis/itcast.itcast-redis.iml" filepath="$PROJECT_DIR$/../itcast-redis/itcast.itcast-redis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../itcast-sms/itcast-sms.iml" filepath="$PROJECT_DIR$/../itcast-sms/itcast-sms.iml" />
       <module fileurl="file://$PROJECT_DIR$/../itcast-solr/itcast.itcast-solr.iml" filepath="$PROJECT_DIR$/../itcast-solr/itcast.itcast-solr.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../itcast-spring-boot/itcast.itcast-spring-boot.iml" filepath="$PROJECT_DIR$/../itcast-spring-boot/itcast.itcast-spring-boot.iml" />
       <module fileurl="file://$PROJECT_DIR$/../itcast-spring-security/itcast.itcast-spring-security.iml" filepath="$PROJECT_DIR$/../itcast-spring-security/itcast.itcast-spring-security.iml" />
       <module fileurl="file://$PROJECT_DIR$/../fastdfs_client/itcast.itcast_fastdfs_client.iml" filepath="$PROJECT_DIR$/../fastdfs_client/itcast.itcast_fastdfs_client.iml" />
       <module fileurl="file://$PROJECT_DIR$/pinyougou.iml" filepath="$PROJECT_DIR$/pinyougou.iml" />
@@ -29,6 +32,10 @@
       <module fileurl="file://$PROJECT_DIR$/pinyougou-sellergoods/pinyougou-sellergoods-service/pinyougou-sellergoods-service.iml" filepath="$PROJECT_DIR$/pinyougou-sellergoods/pinyougou-sellergoods-service/pinyougou-sellergoods-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/pinyougou-shop-web/pinyougou-shop-web.iml" filepath="$PROJECT_DIR$/pinyougou-shop-web/pinyougou-shop-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/pinyougou-solr-import/pinyougou-solr-import.iml" filepath="$PROJECT_DIR$/pinyougou-solr-import/pinyougou-solr-import.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pinyougou-user/pinyougou-user.iml" filepath="$PROJECT_DIR$/pinyougou-user/pinyougou-user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pinyougou-user/pinyougou-user-interface/pinyougou-user-interface.iml" filepath="$PROJECT_DIR$/pinyougou-user/pinyougou-user-interface/pinyougou-user-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pinyougou-user/pinyougou-user-service/pinyougou-user-service.iml" filepath="$PROJECT_DIR$/pinyougou-user/pinyougou-user-service/pinyougou-user-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pinyougou-user-web/pinyougou-user-web.iml" filepath="$PROJECT_DIR$/pinyougou-user-web/pinyougou-user-web.iml" />
     </modules>
   </component>
 </project>

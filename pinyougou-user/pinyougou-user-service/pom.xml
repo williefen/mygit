@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0          http://maven.apache.org/xsd/maven-4.0.0.xsd">  
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">  
   <parent> 
-    <artifactId>pinyougou-search</artifactId>  
+    <artifactId>pinyougou-user</artifactId>  
     <groupId>com.pinyougou</groupId>  
     <version>1.0-SNAPSHOT</version> 
   </parent>  
   <modelVersion>4.0.0</modelVersion>  
   <groupId>com.pinyougou</groupId>  
-  <artifactId>pinyougou-search-service</artifactId>  
+  <artifactId>pinyougou-user-service</artifactId>  
   <packaging>war</packaging>  
   <dependencies> 
     <dependency> 
       <groupId>com.pinyougou</groupId>  
-      <artifactId>pinyougou-search-interface</artifactId>  
+      <artifactId>pinyougou-user-interface</artifactId>  
       <version>1.0-SNAPSHOT</version> 
     </dependency>  
     <dependency> 
@@ -54,12 +54,17 @@
       <groupId>com.alibaba</groupId>  
       <artifactId>fastjson</artifactId> 
     </dependency>  
-    <!-- ActiveMQ 依赖  -->  
+    <dependency> 
+      <groupId>com.pinyougou</groupId>  
+      <artifactId>pinyougou-common</artifactId>  
+      <version>1.0-SNAPSHOT</version> 
+    </dependency>  
+    <!-- ActiveMQ依赖 -->  
     <dependency> 
       <groupId>org.apache.activemq</groupId>  
       <artifactId>activemq-client</artifactId> 
     </dependency>  
-    <!--  加入 spring-jms 依赖  -->  
+    <!-- 加入spring-jms依赖 -->  
     <dependency> 
       <groupId>org.springframework</groupId>  
       <artifactId>spring-jms</artifactId> 
@@ -73,7 +78,7 @@
         <artifactId>tomcat7-maven-plugin</artifactId>  
         <configuration> 
           <path>/</path>  
-          <port>9002</port> 
+          <port>9004</port> 
         </configuration> 
       </plugin> 
     </plugins> 

@@ -6,12 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="itcast.alicom-dysms-api" />
         <module name="itcast.fastdfs_client" />
         <module name="itcast.itcast-activemq" />
         <module name="itcast.itcast-fastdfs" />
         <module name="itcast.itcast-freemarker" />
         <module name="itcast.itcast-redis" />
+        <module name="itcast.itcast-sms" />
         <module name="itcast.itcast-solr" />
+        <module name="itcast.itcast-spring-boot" />
         <module name="itcast.itcast-spring-security" />
         <module name="itcast.itcast_fastdfs_client" />
         <module name="itcast:pinyougou-manage-web" />
@@ -30,16 +33,22 @@
         <module name="pinyougou-sellergoods-service" />
         <module name="pinyougou-shop-web" />
         <module name="pinyougou-solr-import" />
+        <module name="pinyougou-user-interface" />
+        <module name="pinyougou-user-service" />
+        <module name="pinyougou-user-web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="itcast.alicom-dysms-api" target="1.5" />
       <module name="itcast.fastdfs_client" target="1.5" />
       <module name="itcast.itcast-activemq" target="1.8" />
       <module name="itcast.itcast-angularjs" target="1.5" />
       <module name="itcast.itcast-fastdfs" target="1.5" />
       <module name="itcast.itcast-freemarker" target="1.8" />
       <module name="itcast.itcast-redis" target="1.8" />
+      <module name="itcast.itcast-sms" target="1.8" />
       <module name="itcast.itcast-solr" target="1.8" />
+      <module name="itcast.itcast-spring-boot" target="1.8" />
       <module name="itcast.itcast-spring-security" target="1.8" />
       <module name="itcast.itcast_fastdfs_client" target="1.5" />
       <module name="itcast:pinyougou-manage-web" target="1.8" />
@@ -62,6 +71,11 @@
       <module name="pinyougou-sellergoods-service" target="1.8" />
       <module name="pinyougou-shop-web" target="1.8" />
       <module name="pinyougou-solr-import" target="1.8" />
+      <module name="pinyougou-user" target="1.8" />
+      <module name="pinyougou-user-interface" target="1.8" />
+      <module name="pinyougou-user-service" target="1.8" />
+      <module name="pinyougou-user-web" target="1.8" />
+      <module name="pinyougouuserinterface" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
