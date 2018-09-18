@@ -7,10 +7,13 @@ import com.pinyougou.user.service.UserService;
 import com.pinyougou.vo.PageResult;
 import com.pinyougou.vo.Result;
 import org.apache.commons.codec.digest.DigestUtils;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.regex.PatternSyntaxException;
 
 @RequestMapping("/user")
@@ -111,4 +114,15 @@ public class UserController {
             return  Result.fail("发送验证码失败!");
     }
 
+      // 获取当前登录用户信息
+    @GetMapping("/getUsername")
+    public Map<String ,Object> getUsername(){
+        Map<String ,Object> map =new HashMap<String, Object>();
+
+       String username= SecurityContextHolder.getContext().getAuthentication().getName();
+        //如果需要获取用户的其它信息：如头像、性别、收货地址...
+        //根据用户名称查询用户表
+        map.put("username",username);
+        return  map;
+    }
 }

@@ -2,6 +2,9 @@
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/../itcast-angularjs" />
+    <file type="web" url="file://$PROJECT_DIR$/../itcast-cas-client-1" />
+    <file type="web" url="file://$PROJECT_DIR$/../itcast-cas-client-2" />
+    <file type="web" url="file://$PROJECT_DIR$/../itcast-security-cas" />
     <file type="web" url="file://$PROJECT_DIR$/../itcast-spring-security" />
     <file type="web" url="file://$PROJECT_DIR$/pinyougou-content/pinyougou-content-service" />
     <file type="web" url="file://$PROJECT_DIR$/pinyougou-item-web" />
@@ -37,6 +40,11 @@
         <option value="$PROJECT_DIR$/../alicom-dysms-api/pom.xml" />
         <option value="$PROJECT_DIR$/../itcast-spring-boot/pom.xml" />
         <option value="$PROJECT_DIR$/../itcast-sms/pom.xml" />
+        <option value="$PROJECT_DIR$/itcast-cas-client-1/pom.xml" />
+        <option value="$PROJECT_DIR$/../itcast-cas-client-1/pom.xml" />
+        <option value="$PROJECT_DIR$/itcast-cas-client-2/pom.xml" />
+        <option value="$PROJECT_DIR$/../itcast-cas-client-2/pom.xml" />
+        <option value="$PROJECT_DIR$/../itcast-security-cas/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

@@ -9,9 +9,12 @@
         <module name="itcast.alicom-dysms-api" />
         <module name="itcast.fastdfs_client" />
         <module name="itcast.itcast-activemq" />
+        <module name="itcast.itcast-cas-client-1" />
+        <module name="itcast.itcast-cas-client-2" />
         <module name="itcast.itcast-fastdfs" />
         <module name="itcast.itcast-freemarker" />
         <module name="itcast.itcast-redis" />
+        <module name="itcast.itcast-security-cas" />
         <module name="itcast.itcast-sms" />
         <module name="itcast.itcast-solr" />
         <module name="itcast.itcast-spring-boot" />
@@ -43,9 +46,12 @@
       <module name="itcast.fastdfs_client" target="1.5" />
       <module name="itcast.itcast-activemq" target="1.8" />
       <module name="itcast.itcast-angularjs" target="1.5" />
+      <module name="itcast.itcast-cas-client-1" target="1.8" />
+      <module name="itcast.itcast-cas-client-2" target="1.8" />
       <module name="itcast.itcast-fastdfs" target="1.5" />
       <module name="itcast.itcast-freemarker" target="1.8" />
       <module name="itcast.itcast-redis" target="1.8" />
+      <module name="itcast.itcast-security-cas" target="1.8" />
       <module name="itcast.itcast-sms" target="1.8" />
       <module name="itcast.itcast-solr" target="1.8" />
       <module name="itcast.itcast-spring-boot" target="1.8" />
