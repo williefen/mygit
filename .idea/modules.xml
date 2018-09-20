@@ -17,6 +17,10 @@
       <module fileurl="file://$PROJECT_DIR$/../itcast-spring-security/itcast.itcast-spring-security.iml" filepath="$PROJECT_DIR$/../itcast-spring-security/itcast.itcast-spring-security.iml" />
       <module fileurl="file://$PROJECT_DIR$/../fastdfs_client/itcast.itcast_fastdfs_client.iml" filepath="$PROJECT_DIR$/../fastdfs_client/itcast.itcast_fastdfs_client.iml" />
       <module fileurl="file://$PROJECT_DIR$/pinyougou.iml" filepath="$PROJECT_DIR$/pinyougou.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pinyougou-cart/pinyougou-cart.iml" filepath="$PROJECT_DIR$/pinyougou-cart/pinyougou-cart.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pinyougou-cart/pinyougou-cart-interface/pinyougou-cart-interface.iml" filepath="$PROJECT_DIR$/pinyougou-cart/pinyougou-cart-interface/pinyougou-cart-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pinyougou-cart/pinyougou-cart-service/pinyougou-cart-service.iml" filepath="$PROJECT_DIR$/pinyougou-cart/pinyougou-cart-service/pinyougou-cart-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pinyougou-cart-web/pinyougou-cart-web.iml" filepath="$PROJECT_DIR$/pinyougou-cart-web/pinyougou-cart-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/pinyougou-common/pinyougou-common.iml" filepath="$PROJECT_DIR$/pinyougou-common/pinyougou-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/pinyougou-content/pinyougou-content.iml" filepath="$PROJECT_DIR$/pinyougou-content/pinyougou-content.iml" />
       <module fileurl="file://$PROJECT_DIR$/pinyougou-content/pinyougou-content-interface/pinyougou-content-interface.iml" filepath="$PROJECT_DIR$/pinyougou-content/pinyougou-content-interface/pinyougou-content-interface.iml" />

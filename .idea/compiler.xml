@@ -21,6 +21,9 @@
         <module name="itcast.itcast-spring-security" />
         <module name="itcast.itcast_fastdfs_client" />
         <module name="itcast:pinyougou-manage-web" />
+        <module name="pinyougou-cart-interface" />
+        <module name="pinyougou-cart-service" />
+        <module name="pinyougou-cart-web" />
         <module name="pinyougou-common" />
         <module name="pinyougou-content-interface" />
         <module name="pinyougou-content-service" />
@@ -59,6 +62,10 @@
       <module name="itcast.itcast_fastdfs_client" target="1.5" />
       <module name="itcast:pinyougou-manage-web" target="1.8" />
       <module name="pinyougou" target="1.8" />
+      <module name="pinyougou-cart" target="1.8" />
+      <module name="pinyougou-cart-interface" target="1.8" />
+      <module name="pinyougou-cart-service" target="1.8" />
+      <module name="pinyougou-cart-web" target="1.8" />
       <module name="pinyougou-common" target="1.8" />
       <module name="pinyougou-content" target="1.8" />
       <module name="pinyougou-content-interface" target="1.8" />
