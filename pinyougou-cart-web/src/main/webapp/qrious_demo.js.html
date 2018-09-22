@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>二维码测试</title>
+    <script src="plugins/qrious.min.js"></script>
+</head>
+<body>
+<img id="qrious" />
+ <script>
+      var qr = new QRious({
+            element:document.getElementById("qrious"),
+            level:"Q",
+            size:240,
+            value: "http://www.baidu.com"
+      });
+</script>
+</body>
+</html>

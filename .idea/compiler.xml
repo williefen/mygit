@@ -30,6 +30,10 @@
         <module name="pinyougou-dao" />
         <module name="pinyougou-item-web" />
         <module name="pinyougou-manage-web" />
+        <module name="pinyougou-order-interface" />
+        <module name="pinyougou-order-service" />
+        <module name="pinyougou-pay-interface" />
+        <module name="pinyougou-pay-service" />
         <module name="pinyougou-pojo" />
         <module name="pinyougou-portal-web" />
         <module name="pinyougou-search-interface" />
@@ -73,6 +77,12 @@
       <module name="pinyougou-dao" target="1.8" />
       <module name="pinyougou-item-web" target="1.8" />
       <module name="pinyougou-manage-web" target="1.8" />
+      <module name="pinyougou-order" target="1.8" />
+      <module name="pinyougou-order-interface" target="1.8" />
+      <module name="pinyougou-order-service" target="1.8" />
+      <module name="pinyougou-pay" target="1.8" />
+      <module name="pinyougou-pay-interface" target="1.8" />
+      <module name="pinyougou-pay-service" target="1.8" />
       <module name="pinyougou-pojo" target="1.8" />
       <module name="pinyougou-portal-web" target="1.8" />
       <module name="pinyougou-search" target="1.8" />

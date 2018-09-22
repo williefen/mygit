@@ -11,6 +11,8 @@
     <file type="web" url="file://$PROJECT_DIR$/pinyougou-content/pinyougou-content-service" />
     <file type="web" url="file://$PROJECT_DIR$/pinyougou-item-web" />
     <file type="web" url="file://$PROJECT_DIR$/pinyougou-manage-web" />
+    <file type="web" url="file://$PROJECT_DIR$/pinyougou-order/pinyougou-order-service" />
+    <file type="web" url="file://$PROJECT_DIR$/pinyougou-pay/pinyougou-pay-service" />
     <file type="web" url="file://$PROJECT_DIR$/pinyougou-portal-web" />
     <file type="web" url="file://$PROJECT_DIR$/pinyougou-search-web" />
     <file type="web" url="file://$PROJECT_DIR$/pinyougou-search/pinyougou-search-service" />

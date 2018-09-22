@@ -9,6 +9,7 @@ import com.pinyougou.vo.Result;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.util.StringUtils;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -40,30 +41,44 @@ public class CartController {
   @Reference
   private CartService cartService;
 
-@GetMapping("/addCartToCartList")
-  public Result addCartToCartList(Long itemId, Integer num){
 
-      try {
-          String username = SecurityContextHolder.getContext().getAuthentication().getName();
-          // 查询购物车列表
-          List<Cart> cartList = findCartList();
-          //将最新的购买数量添加到对应的购物车列表中
-          cartList = cartService.addCartToCartList(cartList, itemId, num);
-         if("anonymousUser".equals(username)) {
-              // 未登录
-             String cartListJsonStr = JSONArray.toJSONString(cartList);
-             CookieUtils.setCookie(request, response, COOKIE_CART_LIST, cartListJsonStr, COOKIE_CART_MAX_AGE, true);
-         }else{
-             //已经登录；操作在redis中的购物车数据并将最新的购物车列表写回redis
-             cartService.saveCartListToRedis(cartList,username);
-      }
-         return  Result.ok("加入购物车成功");
-      } catch(Exception e) {
-          e.printStackTrace();
-      }
-       return  Result.fail("加入购物车失败");
-  }
+    /**
+     * 增减购物车购买商品数量
+     * @param itemId
+     * @param num
+     * @return
+     */
+    @GetMapping("/addCartToCartList")
+    @CrossOrigin(origins= "http://item.pinyougou.com", allowCredentials = "true")
+    public Result addCartToCartList(Long itemId, Integer num){
 
+        try {
+
+            //允许详情系统的资源请求
+            // response.setHeader("Access-Control-Allow-Origin ", "http://item.pinyougou.com");
+
+            //允许接收详情系统前端携带的cookie
+            // response.setHeader("Access-Control-Allow-Credentials", "true");
+
+            String username = SecurityContextHolder.getContext().getAuthentication().getName();
+            // 查询购物车列表
+            List<Cart> cartList = findCartList();
+            //将最新的购买数量添加到对应的购物车列表中
+            cartList = cartService.addCartToCartList(cartList, itemId, num);
+            if("anonymousUser".equals(username)) {
+                // 未登录
+                String cartListJsonStr = JSONArray.toJSONString(cartList);
+                CookieUtils.setCookie(request, response, COOKIE_CART_LIST, cartListJsonStr, COOKIE_CART_MAX_AGE, true);
+            }else{
+                //已经登录；操作在redis中的购物车数据并将最新的购物车列表写回redis
+                cartService.saveCartListToRedis(cartList,username);
+            }
+            return  Result.ok("加入购物车成功");
+        } catch(Exception e) {
+            e.printStackTrace();
+        }
+        return  Result.fail("加入购物车失败");
+    }
 
     /**
      * 查询登录或者未登录情况下购物车列表数据

@@ -28,6 +28,12 @@
       <module fileurl="file://$PROJECT_DIR$/pinyougou-dao/pinyougou-dao.iml" filepath="$PROJECT_DIR$/pinyougou-dao/pinyougou-dao.iml" />
       <module fileurl="file://$PROJECT_DIR$/pinyougou-item-web/pinyougou-item-web.iml" filepath="$PROJECT_DIR$/pinyougou-item-web/pinyougou-item-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/pinyougou-manage-web/pinyougou-manage-web.iml" filepath="$PROJECT_DIR$/pinyougou-manage-web/pinyougou-manage-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pinyougou-order/pinyougou-order.iml" filepath="$PROJECT_DIR$/pinyougou-order/pinyougou-order.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pinyougou-order/pinyougou-order-interface/pinyougou-order-interface.iml" filepath="$PROJECT_DIR$/pinyougou-order/pinyougou-order-interface/pinyougou-order-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pinyougou-order/pinyougou-order-service/pinyougou-order-service.iml" filepath="$PROJECT_DIR$/pinyougou-order/pinyougou-order-service/pinyougou-order-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pinyougou-pay/pinyougou-pay.iml" filepath="$PROJECT_DIR$/pinyougou-pay/pinyougou-pay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pinyougou-pay/pinyougou-pay-interface/pinyougou-pay-interface.iml" filepath="$PROJECT_DIR$/pinyougou-pay/pinyougou-pay-interface/pinyougou-pay-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pinyougou-pay/pinyougou-pay-service/pinyougou-pay-service.iml" filepath="$PROJECT_DIR$/pinyougou-pay/pinyougou-pay-service/pinyougou-pay-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/pinyougou-pojo/pinyougou-pojo.iml" filepath="$PROJECT_DIR$/pinyougou-pojo/pinyougou-pojo.iml" />
       <module fileurl="file://$PROJECT_DIR$/pinyougou-portal-web/pinyougou-portal-web.iml" filepath="$PROJECT_DIR$/pinyougou-portal-web/pinyougou-portal-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/pinyougou-search/pinyougou-search.iml" filepath="$PROJECT_DIR$/pinyougou-search/pinyougou-search.iml" />

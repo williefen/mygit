@@ -28,6 +28,8 @@
         <module>pinyougou-user-web</module>
         <module>pinyougou-cart</module>
         <module>pinyougou-cart-web</module>
+        <module>pinyougou-order</module>
+        <module>pinyougou-pay</module>
     </modules>
 
 
