@@ -39,6 +39,9 @@
         <module name="pinyougou-search-interface" />
         <module name="pinyougou-search-service" />
         <module name="pinyougou-search-web" />
+        <module name="pinyougou-seckill-interface" />
+        <module name="pinyougou-seckill-service" />
+        <module name="pinyougou-seckill-web" />
         <module name="pinyougou-sellergoods-interface" />
         <module name="pinyougou-sellergoods-service" />
         <module name="pinyougou-shop-web" />
@@ -66,38 +69,80 @@
       <module name="itcast.itcast_fastdfs_client" target="1.5" />
       <module name="itcast:pinyougou-manage-web" target="1.8" />
       <module name="pinyougou" target="1.8" />
+      <module name="pinyougou (1)" target="1.5" />
       <module name="pinyougou-cart" target="1.8" />
+      <module name="pinyougou-cart (1)" target="1.5" />
       <module name="pinyougou-cart-interface" target="1.8" />
+      <module name="pinyougou-cart-interface (1)" target="1.8" />
       <module name="pinyougou-cart-service" target="1.8" />
+      <module name="pinyougou-cart-service (1)" target="1.8" />
       <module name="pinyougou-cart-web" target="1.8" />
+      <module name="pinyougou-cart-web (1)" target="1.5" />
       <module name="pinyougou-common" target="1.8" />
+      <module name="pinyougou-common (1)" target="1.5" />
       <module name="pinyougou-content" target="1.8" />
+      <module name="pinyougou-content (1)" target="1.5" />
       <module name="pinyougou-content-interface" target="1.8" />
+      <module name="pinyougou-content-interface (1)" target="1.8" />
       <module name="pinyougou-content-service" target="1.8" />
+      <module name="pinyougou-content-service (1)" target="1.8" />
       <module name="pinyougou-dao" target="1.8" />
+      <module name="pinyougou-dao (1)" target="1.5" />
       <module name="pinyougou-item-web" target="1.8" />
+      <module name="pinyougou-item-web (1)" target="1.5" />
       <module name="pinyougou-manage-web" target="1.8" />
+      <module name="pinyougou-manage-web (1)" target="1.5" />
       <module name="pinyougou-order" target="1.8" />
+      <module name="pinyougou-order (1)" target="1.5" />
       <module name="pinyougou-order-interface" target="1.8" />
+      <module name="pinyougou-order-interface (1)" target="1.8" />
       <module name="pinyougou-order-service" target="1.8" />
+      <module name="pinyougou-order-service (1)" target="1.8" />
       <module name="pinyougou-pay" target="1.8" />
+      <module name="pinyougou-pay (1)" target="1.5" />
       <module name="pinyougou-pay-interface" target="1.8" />
+      <module name="pinyougou-pay-interface (1)" target="1.8" />
       <module name="pinyougou-pay-service" target="1.8" />
+      <module name="pinyougou-pay-service (1)" target="1.8" />
       <module name="pinyougou-pojo" target="1.8" />
+      <module name="pinyougou-pojo (1)" target="1.5" />
       <module name="pinyougou-portal-web" target="1.8" />
+      <module name="pinyougou-portal-web (1)" target="1.5" />
       <module name="pinyougou-search" target="1.8" />
+      <module name="pinyougou-search (1)" target="1.5" />
       <module name="pinyougou-search-interface" target="1.8" />
+      <module name="pinyougou-search-interface (1)" target="1.8" />
       <module name="pinyougou-search-service" target="1.8" />
+      <module name="pinyougou-search-service (1)" target="1.8" />
       <module name="pinyougou-search-web" target="1.8" />
+      <module name="pinyougou-search-web (1)" target="1.5" />
+      <module name="pinyougou-seckill" target="1.8" />
+      <module name="pinyougou-seckill (1)" target="1.5" />
+      <module name="pinyougou-seckill-interface" target="1.8" />
+      <module name="pinyougou-seckill-interface (1)" target="1.8" />
+      <module name="pinyougou-seckill-service" target="1.8" />
+      <module name="pinyougou-seckill-service (1)" target="1.8" />
+      <module name="pinyougou-seckill-web" target="1.8" />
+      <module name="pinyougou-seckill-web (1)" target="1.5" />
       <module name="pinyougou-sellergoods" target="1.8" />
+      <module name="pinyougou-sellergoods (1)" target="1.5" />
       <module name="pinyougou-sellergoods-interface" target="1.8" />
+      <module name="pinyougou-sellergoods-interface (1)" target="1.8" />
       <module name="pinyougou-sellergoods-service" target="1.8" />
+      <module name="pinyougou-sellergoods-service (1)" target="1.8" />
       <module name="pinyougou-shop-web" target="1.8" />
+      <module name="pinyougou-shop-web (1)" target="1.5" />
       <module name="pinyougou-solr-import" target="1.8" />
+      <module name="pinyougou-solr-import (1)" target="1.5" />
+      <module name="pinyougou-task-service" target="1.5" />
       <module name="pinyougou-user" target="1.8" />
+      <module name="pinyougou-user (1)" target="1.5" />
       <module name="pinyougou-user-interface" target="1.8" />
+      <module name="pinyougou-user-interface (1)" target="1.8" />
       <module name="pinyougou-user-service" target="1.8" />
+      <module name="pinyougou-user-service (1)" target="1.8" />
       <module name="pinyougou-user-web" target="1.8" />
+      <module name="pinyougou-user-web (1)" target="1.5" />
       <module name="pinyougouuserinterface" target="1.8" />
     </bytecodeTargetLevel>
   </component>

@@ -16,10 +16,29 @@
     <file type="web" url="file://$PROJECT_DIR$/pinyougou-portal-web" />
     <file type="web" url="file://$PROJECT_DIR$/pinyougou-search-web" />
     <file type="web" url="file://$PROJECT_DIR$/pinyougou-search/pinyougou-search-service" />
+    <file type="web" url="file://$PROJECT_DIR$/pinyougou-seckill-web" />
+    <file type="web" url="file://$PROJECT_DIR$/pinyougou-seckill/pinyougou-seckill-service" />
     <file type="web" url="file://$PROJECT_DIR$/pinyougou-sellergoods/pinyougou-sellergoods-service" />
     <file type="web" url="file://$PROJECT_DIR$/pinyougou-shop-web" />
     <file type="web" url="file://$PROJECT_DIR$/pinyougou-user-web" />
     <file type="web" url="file://$PROJECT_DIR$/pinyougou-user/pinyougou-user-service" />
+    <file type="web" url="file://$PROJECT_DIR$/../../daima/pinyougou/pinyougou/pinyougou-cart-web" />
+    <file type="web" url="file://$PROJECT_DIR$/../../daima/pinyougou/pinyougou/pinyougou-cart/pinyougou-cart-service" />
+    <file type="web" url="file://$PROJECT_DIR$/../../daima/pinyougou/pinyougou/pinyougou-content/pinyougou-content-service" />
+    <file type="web" url="file://$PROJECT_DIR$/../../daima/pinyougou/pinyougou/pinyougou-item-web" />
+    <file type="web" url="file://$PROJECT_DIR$/../../daima/pinyougou/pinyougou/pinyougou-manage-web" />
+    <file type="web" url="file://$PROJECT_DIR$/../../daima/pinyougou/pinyougou/pinyougou-order/pinyougou-order-service" />
+    <file type="web" url="file://$PROJECT_DIR$/../../daima/pinyougou/pinyougou/pinyougou-pay/pinyougou-pay-service" />
+    <file type="web" url="file://$PROJECT_DIR$/../../daima/pinyougou/pinyougou/pinyougou-portal-web" />
+    <file type="web" url="file://$PROJECT_DIR$/../../daima/pinyougou/pinyougou/pinyougou-search-web" />
+    <file type="web" url="file://$PROJECT_DIR$/../../daima/pinyougou/pinyougou/pinyougou-search/pinyougou-search-service" />
+    <file type="web" url="file://$PROJECT_DIR$/../../daima/pinyougou/pinyougou/pinyougou-seckill-web" />
+    <file type="web" url="file://$PROJECT_DIR$/../../daima/pinyougou/pinyougou/pinyougou-seckill/pinyougou-seckill-service" />
+    <file type="web" url="file://$PROJECT_DIR$/../../daima/pinyougou/pinyougou/pinyougou-sellergoods/pinyougou-sellergoods-service" />
+    <file type="web" url="file://$PROJECT_DIR$/../../daima/pinyougou/pinyougou/pinyougou-shop-web" />
+    <file type="web" url="file://$PROJECT_DIR$/../../daima/pinyougou/pinyougou/pinyougou-task-service" />
+    <file type="web" url="file://$PROJECT_DIR$/../../daima/pinyougou/pinyougou/pinyougou-user-web" />
+    <file type="web" url="file://$PROJECT_DIR$/../../daima/pinyougou/pinyougou/pinyougou-user/pinyougou-user-service" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -49,11 +68,50 @@
         <option value="$PROJECT_DIR$/itcast-cas-client-2/pom.xml" />
         <option value="$PROJECT_DIR$/../itcast-cas-client-2/pom.xml" />
         <option value="$PROJECT_DIR$/../itcast-security-cas/pom.xml" />
+        <option value="$PROJECT_DIR$/../../daima/pinyougou/pinyougou/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/../itcast-angularjs/itcast-spring-security/pom.xml" />
+        <option value="$PROJECT_DIR$/../../daima/pinyougou/pinyougou/pinyougou-cart-web/pom.xml" />
+        <option value="$PROJECT_DIR$/../../daima/pinyougou/pinyougou/pinyougou-cart/pinyougou-cart-interface/pom.xml" />
+        <option value="$PROJECT_DIR$/../../daima/pinyougou/pinyougou/pinyougou-cart/pinyougou-cart-service/pom.xml" />
+        <option value="$PROJECT_DIR$/../../daima/pinyougou/pinyougou/pinyougou-cart/pom.xml" />
+        <option value="$PROJECT_DIR$/../../daima/pinyougou/pinyougou/pinyougou-common/pom.xml" />
+        <option value="$PROJECT_DIR$/../../daima/pinyougou/pinyougou/pinyougou-content/pinyougou-content-interface/pom.xml" />
+        <option value="$PROJECT_DIR$/../../daima/pinyougou/pinyougou/pinyougou-content/pinyougou-content-service/pom.xml" />
+        <option value="$PROJECT_DIR$/../../daima/pinyougou/pinyougou/pinyougou-content/pom.xml" />
+        <option value="$PROJECT_DIR$/../../daima/pinyougou/pinyougou/pinyougou-dao/pom.xml" />
+        <option value="$PROJECT_DIR$/../../daima/pinyougou/pinyougou/pinyougou-item-web/pom.xml" />
+        <option value="$PROJECT_DIR$/../../daima/pinyougou/pinyougou/pinyougou-manage-web/pom.xml" />
+        <option value="$PROJECT_DIR$/../../daima/pinyougou/pinyougou/pinyougou-order/pinyougou-order-interface/pom.xml" />
+        <option value="$PROJECT_DIR$/../../daima/pinyougou/pinyougou/pinyougou-order/pinyougou-order-service/pom.xml" />
+        <option value="$PROJECT_DIR$/../../daima/pinyougou/pinyougou/pinyougou-order/pom.xml" />
+        <option value="$PROJECT_DIR$/../../daima/pinyougou/pinyougou/pinyougou-pay/pinyougou-pay-interface/pom.xml" />
+        <option value="$PROJECT_DIR$/../../daima/pinyougou/pinyougou/pinyougou-pay/pinyougou-pay-service/pom.xml" />
+        <option value="$PROJECT_DIR$/../../daima/pinyougou/pinyougou/pinyougou-pay/pom.xml" />
+        <option value="$PROJECT_DIR$/../../daima/pinyougou/pinyougou/pinyougou-pojo/pom.xml" />
+        <option value="$PROJECT_DIR$/../../daima/pinyougou/pinyougou/pinyougou-portal-web/pom.xml" />
+        <option value="$PROJECT_DIR$/../../daima/pinyougou/pinyougou/pinyougou-search-web/pom.xml" />
+        <option value="$PROJECT_DIR$/../../daima/pinyougou/pinyougou/pinyougou-search/pinyougou-search-interface/pom.xml" />
+        <option value="$PROJECT_DIR$/../../daima/pinyougou/pinyougou/pinyougou-search/pinyougou-search-service/pom.xml" />
+        <option value="$PROJECT_DIR$/../../daima/pinyougou/pinyougou/pinyougou-search/pom.xml" />
+        <option value="$PROJECT_DIR$/../../daima/pinyougou/pinyougou/pinyougou-seckill-web/pom.xml" />
+        <option value="$PROJECT_DIR$/../../daima/pinyougou/pinyougou/pinyougou-seckill/pinyougou-seckill-interface/pom.xml" />
+        <option value="$PROJECT_DIR$/../../daima/pinyougou/pinyougou/pinyougou-seckill/pinyougou-seckill-service/pom.xml" />
+        <option value="$PROJECT_DIR$/../../daima/pinyougou/pinyougou/pinyougou-seckill/pom.xml" />
+        <option value="$PROJECT_DIR$/../../daima/pinyougou/pinyougou/pinyougou-sellergoods/pinyougou-sellergoods-interface/pom.xml" />
+        <option value="$PROJECT_DIR$/../../daima/pinyougou/pinyougou/pinyougou-sellergoods/pinyougou-sellergoods-service/pom.xml" />
+        <option value="$PROJECT_DIR$/../../daima/pinyougou/pinyougou/pinyougou-sellergoods/pom.xml" />
+        <option value="$PROJECT_DIR$/../../daima/pinyougou/pinyougou/pinyougou-shop-web/pom.xml" />
+        <option value="$PROJECT_DIR$/../../daima/pinyougou/pinyougou/pinyougou-solr-import/pom.xml" />
+        <option value="$PROJECT_DIR$/../../daima/pinyougou/pinyougou/pinyougou-task-service/pom.xml" />
+        <option value="$PROJECT_DIR$/../../daima/pinyougou/pinyougou/pinyougou-user-web/pom.xml" />
+        <option value="$PROJECT_DIR$/../../daima/pinyougou/pinyougou/pinyougou-user/pinyougou-user-interface/pom.xml" />
+        <option value="$PROJECT_DIR$/../../daima/pinyougou/pinyougou/pinyougou-user/pinyougou-user-service/pom.xml" />
+        <option value="$PROJECT_DIR$/../../daima/pinyougou/pinyougou/pinyougou-user/pom.xml" />
+        <option value="$PROJECT_DIR$/../../daima/pinyougou/pinyougou/pom.xml" />
       </set>
     </option>
   </component>
